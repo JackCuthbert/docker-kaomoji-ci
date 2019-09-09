@@ -6,7 +6,7 @@
 
 [View on Docker Hub](https://hub.docker.com/r/jckcthbrt/kaomoji-ci/)
 
-A Docker image based on `node:8-alpine` with all the required software to build [Kaomoji.moe](https://kaomoji.moe/)'s various projects in GitLab's CI pipelines.
+A Docker image based on `node:10-alpine` with all the required software to build [Kaomoji.moe](https://kaomoji.moe/)'s various projects in GitLab's CI pipelines and other Gatsby, Node, or Serverless based projects.
 
 Inspired by:
   * [sekka1/aws-cli-docker](https://github.com/sekka1/aws-cli-docker)
@@ -16,7 +16,9 @@ Inspired by:
 
 * aws-cli
 * curl
+* gcc (for [sharp](http://sharp.pixelplumbing.com/en/stable/install/))
 * git
+* libvips (for [sharp](http://sharp.pixelplumbing.com/en/stable/install/))
 * node.js
 * npm
 * serverless

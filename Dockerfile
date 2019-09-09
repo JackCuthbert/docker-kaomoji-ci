@@ -6,7 +6,7 @@ ENV AWS_CLI_VERSION 1.16.234
 # https://github.com/serverless/serverless/releases
 ENV SERVERLESS_VERSION 1.51.0
 
-# Dependencies
+# Serverless + AWS CLI dependencies
 RUN apk --no-cache update && \
     apk --no-cache add \
         ca-certificates \
@@ -18,6 +18,11 @@ RUN apk --no-cache update && \
         py-setuptools \
         python \
         zip
+
+# Sharp dependencies
+RUN apk add vips-dev fftw-dev build-base --update-cache \
+    --repository https://alpine.global.ssl.fastly.net/alpine/edge/community/ \
+    --repository https://alpine.global.ssl.fastly.net/alpine/edge/main
 
 # Cleanup
 RUN rm -rf /var/cache/apk/*
