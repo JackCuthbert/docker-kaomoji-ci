@@ -1,10 +1,10 @@
-FROM node:8-alpine
+FROM node:10-alpine
 
 # https://pypi.python.org/pypi/awscli#downloads
-ENV AWS_CLI_VERSION 1.16.54
+ENV AWS_CLI_VERSION 1.16.234
 
 # https://github.com/serverless/serverless/releases
-ENV SERVERLESS_VERSION 1.30.3
+ENV SERVERLESS_VERSION 1.51.0
 
 # Dependencies
 RUN apk --no-cache update && \
