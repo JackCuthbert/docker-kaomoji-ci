@@ -18,6 +18,7 @@ Inspired by:
 * curl
 * gcc (for [sharp](http://sharp.pixelplumbing.com/en/stable/install/))
 * git
+* jq
 * libvips (for [sharp](http://sharp.pixelplumbing.com/en/stable/install/))
 * node.js
 * npm
